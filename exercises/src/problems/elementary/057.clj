@@ -8,6 +8,7 @@ This is one of the fundamental techniques
 used in functional programming.")
 
 
-(def solution nil)
+(def solution [5 4 3 2 1])
 
-(assert (and (= solution ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))))
+(assert (and (= solution ((fn foo [x] 
+                            (when (> x 0) (conj (foo (dec x)) x))) 5))))

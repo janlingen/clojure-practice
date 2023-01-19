@@ -13,7 +13,8 @@ function which takes a default value and a sequence of keys and constructs a map
 
 
 (defn solution
-  [& args])
+  [& args]
+  (assoc {} ))
 
 
 (assert (and (= (solution 0 [:a :b :c]) {:a 0, :b 0, :c 0})

@@ -6,7 +6,8 @@
 
 
 (defn solution
-  [& args])
+  [& args]
+  (* (first args) 2))
 
 
 (assert (and (= (solution 2) 4)

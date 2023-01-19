@@ -6,7 +6,8 @@
 
 
 (defn solution
-  [& args])
+  [& args]
+  (str "Hello, " (first args) "!"))
 
 
 (assert (and (= (solution "Dave") "Hello, Dave!")

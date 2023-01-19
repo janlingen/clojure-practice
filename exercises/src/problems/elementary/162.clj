@@ -7,7 +7,7 @@
 falsity in conditional tests - anything else is logical truth.")
 
 
-(def solution nil)
+(def solution 1)
 
 
 (assert (and (= solution (if-not false 1 0))

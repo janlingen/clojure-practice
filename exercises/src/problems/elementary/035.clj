@@ -7,7 +7,7 @@
 to values using the special let-form.")
 
 
-(def solution nil)
+(def solution 7)
 
 
 (assert (and (= solution (let [x 5] (+ 2 x)))

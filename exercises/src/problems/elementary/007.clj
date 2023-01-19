@@ -8,7 +8,7 @@ the conj function will return a new vector
 with one or more items "added" to the end.")
 
 
-(def solution nil)
+(def solution [1 2 3 4])
 
 
 (assert (and (= solution (conj [1 2 3] 4))

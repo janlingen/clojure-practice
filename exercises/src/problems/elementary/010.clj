@@ -8,7 +8,7 @@ Both maps and keywords can be used as lookup functions.
 Commas are whitespace.")
 
 
-(def solution nil)
+(def solution 20)
 
 
 (assert (and (= solution ((hash-map :a 10 :b 20 :c 30) :b))

@@ -4,7 +4,7 @@
 
 (comment "Clojure has many different ways to create functions.")
 
-(def solution nil)
+(def solution 8)
 
 
 (assert (and (= solution ((fn add-five [x] (+ x 5)) 3))

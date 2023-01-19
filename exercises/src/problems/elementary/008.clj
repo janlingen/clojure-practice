@@ -4,7 +4,7 @@
 
 (comment "Sets are collections of unique values.")
 
-(def solution nil)
+(def solution #{:a :b :c :d})
 
 
 (assert (and (= solution (set (quote (:a :a :b :c :c :c :c :d :d))))

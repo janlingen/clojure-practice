@@ -4,6 +4,6 @@
 
 (comment "Innermost forms are evaluated first.")
 
-(def solution nil)
+(def solution 4)
 
 (assert (and (= (- 10 (* 2 3)) solution)))
