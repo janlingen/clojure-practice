@@ -7,6 +7,9 @@
 an infinite lazy sequence.")
 
 
-(def solution nil)
+(def solution (seq [1 4 7 10 13]))
 
-(assert (and (= solution (take 5 (iterate (fn* [p1__4821#] (+ 3 p1__4821#)) 1)))))
+(assert (and (= solution (take 5 
+                               (iterate 
+                                (fn* [p1__4821#] (+ 3 p1__4821#)) 
+                                1)))))

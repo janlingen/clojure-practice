@@ -8,7 +8,8 @@ the second to last element from a sequence.")
 
 
 (defn solution
-  [& args])
+  [& args]
+  (first (rest (reverse (first args)))))
 
 
 (assert (and (= (solution (list 1 2 3 4 5)) 4)

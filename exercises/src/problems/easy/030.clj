@@ -8,7 +8,8 @@ consecutive duplicates from a sequence.")
 
 
 (defn solution
-  [& args])
+  [in]
+  (dedupe in))
 
 
 (assert (and (= (apply str (solution "Leeeeeerrroyyy")) "Leroy")

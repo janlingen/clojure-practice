@@ -6,7 +6,9 @@
 
 
 (defn solution
-  [& args])
+  [& args]
+  (reduce * (range 1 (+ 1 (first args)))))
+
 
 
 (assert (and (= (solution 1) 1)

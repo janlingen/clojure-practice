@@ -8,7 +8,8 @@ packs consecutive duplicates into sub-lists.")
 
 
 (defn solution
-  [& args])
+  [& args]
+  (partition-by identity (first args)))
 
 
 (assert (and (= (solution [1 1 2 1 1 1 3 3]) (quote ((1 1) (2) (1 1 1) (3 3))))

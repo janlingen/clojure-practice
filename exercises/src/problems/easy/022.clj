@@ -8,7 +8,8 @@ the total number of elements in a sequence.")
 
 
 (defn solution
-  [& args])
+  [& args]
+  (count (first args)))
 
 
 (assert (and (= (solution (quote (1 2 3 3 1))) 5)

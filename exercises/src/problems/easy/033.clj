@@ -8,7 +8,8 @@ element of a sequence a variable number of times.")
 
 
 (defn solution
-  [& args])
+  [& args]
+    (mapcat (fn [x] (repeat (last args) x)) (first args)))
 
 
 (assert (and (= (solution [1 2 3] 2) (quote (1 1 2 2 3 3)))

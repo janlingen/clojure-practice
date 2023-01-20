@@ -8,8 +8,11 @@ and returns a new string containing only the capital letters.")
 
 
 (defn solution
-  [& args])
+  [& args]
+  (apply str (filter 
+    (fn [x] (if (re-matches #"[A-Z]" (.toString x)) true false)) (first args))))
 
+(solution "HelLo")
 
 (assert (and (= (solution "HeLlO, WoRlD!") "HLOWRD")
              (empty? (solution "nothing"))
