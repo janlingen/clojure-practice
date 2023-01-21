@@ -13,9 +13,8 @@ function which takes a default value and a sequence of keys and constructs a map
 
 
 (defn solution
-  [& args]
-  (assoc {} ))
-
+  [& args] 
+  (zipmap (last args) (repeat (count (last args)) (first args))))
 
 (assert (and (= (solution 0 [:a :b :c]) {:a 0, :b 0, :c 0})
              (= (solution "x" [1 2 3]) {1 "x", 2 "x", 3 "x"})

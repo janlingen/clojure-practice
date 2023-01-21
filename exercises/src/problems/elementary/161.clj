@@ -7,7 +7,7 @@
     if A is "contained" inside B. A and B may coincide.")
 
 
-(def solution nil)
+(def solution #{1 2})
 
 
 (assert (and (clojure.set/superset? solution #{2})

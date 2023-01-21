@@ -7,7 +7,7 @@
 
 (defn solution
   [& args]
-  (str "Hello, " (first args) "!"))
+  (str "Hello," \space (first args) "!"))
 
 
 (assert (and (= (solution "Dave") "Hello, Dave!")
