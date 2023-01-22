@@ -10,7 +10,7 @@ left-to-right to the argument list.")
 
 
 (defn solution
-  [& args])
+  [& args] (fn [& x] (for [y args] (apply y x))))
 
 
 (assert (and (= [21 6 1] ((solution + max min) 2 3 5 1 6 4))

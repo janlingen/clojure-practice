@@ -8,7 +8,8 @@ flips the order of the arguments of an input function.")
 
 
 (defn solution
-  [& args])
+  [f]
+  (fn [x y] (f y x)))
 
 
 (assert (and (= 3 ((solution nth) 2 [1 2 3 4 5]))

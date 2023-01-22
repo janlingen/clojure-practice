@@ -19,7 +19,11 @@ the point is to poke at them and understand their behavior.")
 
 
 (defn solution
-  [& args])
+  [data]
+  (cond (= (inc (count data)) (count (conj data {:trying 1} {:trying 2}))) :map
+        (= (inc (count data)) (count (conj data -1 -1))) :set
+        (= (last (conj data :key1 :key2)) :key2) :vector
+        :else :list))
 
 
 (assert (and (= :map (solution {:a 1, :b 2}))
