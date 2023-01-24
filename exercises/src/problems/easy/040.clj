@@ -8,7 +8,7 @@ the items of a sequence by an arbitrary value.")
 
 
 (defn solution
-  [& args])
+  [])
 
 
 (assert (and (= (solution 0 [1 2 3]) [1 0 2 0 3])

@@ -8,8 +8,10 @@ and returns the first item from each,
 then the second item from each, then the third, etc.")
 
 
-(defn solution
-  [& args])
+(defn solution2
+  [a b] (interleave a b))
+
+(defn solution [a b] (for [x (range (min (count a) (count b)))] [(nth (seq a) x) (nth (seq b) x)]))
 
 
 (assert (and (= (solution [1 2 3] [:a :b :c]) (quote (1 :a 2 :b 3 :c)))

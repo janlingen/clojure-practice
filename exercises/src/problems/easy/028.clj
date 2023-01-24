@@ -6,7 +6,7 @@
 
 
 (defn solution
-  [& args])
+  [a] (if (coll? a) (do (println a) (mapcat solution a)) [a]))
 
 
 (assert (and (= (solution (quote ((1 2) 3 [4 [5 6]]))) (quote (1 2 3 4 5 6)))
