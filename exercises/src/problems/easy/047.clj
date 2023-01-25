@@ -9,7 +9,7 @@ This often leads beginner clojurians to use it incorrectly
 with numerically indexed collections like vectors and lists.")
 
 
-(def solution nil)
+(def solution 4)
 
 
 (assert (and (contains? #{4 6 5} solution)

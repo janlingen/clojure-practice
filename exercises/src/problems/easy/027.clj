@@ -23,15 +23,17 @@ Hint: "racecar" does not equal '(\r \a \c \e \c \a \r)")
 
 (defn solution3 [a] (= (seq a) (reverse a)))
 
+(defn solution4 [x] (every? true? (map #(= (nth x %1) (nth x (- (count x) 1 %1))) (range (count x)))))
 
-(solution (quote (1 2 3 4 5)))
+
+(solution4 (quote (1 2 3 4 5)))
 
 (solution2 (quote (1 2 3 4 5)))
 
 (solution3 "racecar")
 
-(assert (and (false? (solution (quote (1 2 3 4 5))))
-             (true? (solution "racecar"))
-             (true? (solution [:foo :bar :foo]))
-             (true? (solution (quote (1 1 3 3 1 1))))
-             (false? (solution (quote (:a :b :c))))))
+(assert (and (false? (solution4 (quote (1 2 3 4 5))))
+             (true? (solution4 "racecar"))
+             (true? (solution4 [:foo :bar :foo]))
+             (true? (solution4 (quote (1 1 3 3 1 1))))
+             (false? (solution4 (quote (:a :b :c))))))

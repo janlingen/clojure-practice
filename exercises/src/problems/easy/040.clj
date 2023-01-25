@@ -7,8 +7,9 @@
 the items of a sequence by an arbitrary value.")
 
 
+
 (defn solution
-  [])
+  [in x] (drop-last (flatten (map (fn [x] [x in]) x))))
 
 
 (assert (and (= (solution 0 [1 2 3]) [1 0 2 0 3])

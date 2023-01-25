@@ -8,7 +8,7 @@ drops every Nth item from a sequence.")
 
 
 (defn solution
-  [& args])
+  [x y] (for [a (range (count x)) :when (> (rem (+ a 1) y) 0)] (nth x a)))
 
 
 (assert (and (= (solution [1 2 3 4 5 6 7 8] 3) [1 2 4 5 7 8])
