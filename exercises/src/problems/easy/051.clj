@@ -7,6 +7,6 @@
 more sophisticated destructuring.")
 
 
-(def solution nil)
+(def solution [1 2 3 4 5])
 
 (assert (and (= [1 2 [3 4 5] [1 2 3 4 5]] (let [[a b & c :as d] solution] [a b c d]))))

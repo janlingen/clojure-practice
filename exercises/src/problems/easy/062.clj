@@ -10,7 +10,7 @@ of x, (f x), (f (f x)), (f (f (f x))), etc.")
 
 
 (defn solution
-  [& args])
+  [f x] (cons x (lazy-seq (solution f (f x)))))
 
 
 (assert (and (= (take 5 (solution (fn* [p1__4827#] (* 2 p1__4827#)) 1)) [1 2 4 8 16])

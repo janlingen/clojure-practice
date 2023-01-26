@@ -9,7 +9,7 @@ It returns the first logical true value of (predicate x)
 where x is an item in the collection.")
 
 
-(def solution nil)
+(def solution 6)
 
 
 (assert (and (= solution (some #{7 6 2} [5 6 7 8]))
