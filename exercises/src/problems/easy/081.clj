@@ -10,8 +10,7 @@ that each set has in common.")
 
 
 (defn solution
-  [& args])
-
+  [x y] (set (filter (fn [a] (contains? x a)) y)))
 
 (assert (and (= (solution #{0 1 3 2} #{4 3 2 5}) #{3 2})
              (= (solution #{0 1 2} #{4 3 5}) #{})
