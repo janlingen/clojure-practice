@@ -11,7 +11,7 @@ of corresponding items in the order they appear in s.")
 
 
 (defn solution
-  [& args])
+  [x y] (apply merge-with concat (map (fn [a b] {a [b]}) (map x y) y)))
 
 
 (assert (and (= (solution (fn* [p1__4829#] (> p1__4829# 5)) #{1 6 3 8}) {false [1 3], true [6 8]})
