@@ -8,7 +8,8 @@ returns the greatest common divisor.")
 
 
 (defn solution
-  [& args])
+  [x y] (if (= (rem (max x y) (min x y)) 0) (min x y)
+           (solution (min x y) (rem (max x y) (min x y)))))
 
 
 (assert (and (= (solution 2 4) 2)

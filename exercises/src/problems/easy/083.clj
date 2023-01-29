@@ -12,7 +12,7 @@ Otherwise your function should return false.")
 
 
 (defn solution
-  [& args])
+  [& args] (= (count (keys (group-by identity args))) 2))
 
 
 (assert (and (= false (solution false false))
