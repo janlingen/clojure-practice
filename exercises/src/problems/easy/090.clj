@@ -8,7 +8,7 @@ the Cartesian product of two sets.")
 
 
 (defn solution
-  [& args])
+  [a b] (set (for [x a y b] [x y])))
 
 
 (assert (and (= (solution #{"queen" "king" "ace"} #{"♣" "♠" "♥" "♦"}) #{["ace" "♠"] ["queen" "♠"] ["ace" "♥"] ["ace" "♦"] ["king" "♣"] ["queen" "♣"] ["queen" "♥"] ["king" "♦"] ["ace" "♣"] ["queen" "♦"] ["king" "♥"] ["king" "♠"]})

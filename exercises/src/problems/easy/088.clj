@@ -10,7 +10,7 @@ belonging to one but not both of the two sets.")
 
 
 (defn solution
-  [& args])
+  [x y] (set (map first (filter (fn [a] (if (> (second a) 1) false true)) (frequencies (concat x y))))))
 
 
 (assert (and (= (solution #{1 4 6 3 2 5} #{7 1 3 5}) #{7 4 6 2})
