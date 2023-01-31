@@ -10,7 +10,7 @@ return a lazy sequence of (f x) for each element x in s.")
 
 
 (defn solution
-  [& args])
+  [f x] (for [a x] (f a)))
 
 
 (assert (and (= [3 4 5 6 7] (solution inc [2 3 4 5 6]))

@@ -8,7 +8,7 @@ elements along with their index.")
 
 
 (defn solution
-  [& args])
+  [a] (map (fn [x y] [x y]) a (range (count a))))
 
 
 (assert (and (= (solution [:a :b :c]) [[:a 0] [:b 1] [:c 2]])

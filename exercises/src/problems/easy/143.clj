@@ -8,7 +8,7 @@ You may assume that the vectors will have the same length.")
 
 
 (defn solution
-  [& args])
+  [x y] (reduce + (map * x y)))
 
 
 (assert (and (= 0 (solution [0 1 0] [1 0 0]))
