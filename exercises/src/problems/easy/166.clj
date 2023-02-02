@@ -16,10 +16,16 @@ for the relationship between x and y are as follows:
 
 
 (defn solution
-  [& args])
+  [f a b] (cond
+            (= > f) (if (f a b) :gt :lt) 
+            (= < f) (if (f a b) :lt :gt)
+            :else :eq))
 
 
 (assert (and (= :gt (solution < 5 1))
              (= :eq (solution (fn [x y] (< (count x) (count y))) "pear" "plum"))
              (= :lt (solution (fn [x y] (< (mod x 5) (mod y 5))) 21 3))
              (= :gt (solution > 0 2))))
+
+
+(= > <)

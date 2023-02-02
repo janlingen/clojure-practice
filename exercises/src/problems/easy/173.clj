@@ -8,8 +8,6 @@ sequential things (vectors, lists, seqs, etc.): (let [bindings* ] exprs*) Comple
 the bindings so all let-parts evaluate to 3.")
 
 
-(defn solution
-  [& args])
-
-
-(assert (and (= 3 (let [[solution] [+ (range 3)]] (apply solution)) (let [[[solution] b] [[+ 1] 2]] (solution b)) (let [[solution] [inc 2]] (solution)))))
+(assert (and (= 3 (let [[f a] [+ (range 3)]] 
+                    (apply f a)) 
+                (let [[[f a] b] [[+ 1] 2]] (f a b)) (let [[f a] [inc 2]] (f a)))))
