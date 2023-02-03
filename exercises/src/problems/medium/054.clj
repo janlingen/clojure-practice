@@ -9,7 +9,8 @@ Lists of less than x items should not be returned.")
 
 
 (defn solution
-  [& args])
+  ([x y z] (if (>= (count y) x) (solution x (drop x y) (conj z (take x y))) z))
+  ([x y] (if (>= (count y) x) (solution x y []) [])))
 
 
 (assert (and (= (solution 3 (range 9)) (quote ((0 1 2) (3 4 5) (6 7 8))))
