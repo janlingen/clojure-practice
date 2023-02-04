@@ -17,3 +17,6 @@ falsity in conditional tests - anything else is logical truth.")
              (= solution (if [0] 1 0))
              (= solution (if 0 1 0))
              (= solution (if 1 1 0))))
+
+
+;; Class return itself when called (Class Class)
