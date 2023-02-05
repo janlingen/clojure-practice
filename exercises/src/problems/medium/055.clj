@@ -9,7 +9,12 @@ of each distinct item in a sequence.")
 
 
 (defn solution
-  [& args])
+  [x] (loop [a x b {}] 
+        (if (empty? a) 
+          b 
+          (recur 
+           (rest a) 
+           (assoc b (first a) ((fnil inc 0) (get b (first a))))))))
 
 
 (assert (and (= (solution [1 1 2 3 2 1 1]) {1 4, 2 2, 3 1})
