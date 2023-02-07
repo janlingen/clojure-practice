@@ -9,7 +9,11 @@ Order of the items must be maintained.")
 
 
 (defn solution
-  [& args])
+  [x] (loop [a [] b x]
+        (if (empty? b) a 
+            (recur (if (= (some #{(first b)} a) nil) (conj a (first b)) a) 
+                   (rest b))
+        )))
 
 
 (assert (and (= (solution [1 2 1 3 1 2 4]) [1 2 3 4])
