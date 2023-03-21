@@ -10,7 +10,7 @@ a left child, and a right child.")
 
 
 (defn solution
-  [x] (= (rem (count (flatten x)) 3) 2))
+  [& args])
 
 
 (assert (and (= (solution (quote (:a (:b nil nil) nil))) true)
