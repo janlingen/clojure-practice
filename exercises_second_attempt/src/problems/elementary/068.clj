@@ -12,6 +12,8 @@ Recur must be called from the tail-position,
 and calling it elsewhere will result in an error.")
 
 
-(def solution nil)
+(def solution [7 6 5 4 3])
 
-(assert (and (= solution (loop [x 5 result []] (if (> x 0) (recur (dec x) (conj result (+ 2 x))) result)))))
+(assert (and (= solution (loop [x 5 result []] 
+                           (if (> x 0) (recur (dec x) (conj result (+ 2 x)))
+                               result)))))

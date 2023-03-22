@@ -7,6 +7,6 @@
 You can compare them with lists.")
 
 
-(def solution [,,,])
+(def solution [:a :b :c])
 
 (assert (and (= solution (list :a :b :c) (vec (quote (:a :b :c))) (vector :a :b :c))))

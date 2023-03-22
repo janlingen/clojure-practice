@@ -8,7 +8,8 @@ the map contains an entry with that key and its value is nil.")
 
 
 (defn solution
-  [& args])
+  [x y]
+  (if (contains? y x) (if (= (x y) nil) true false) false))
 
 
 (assert (and (true? (solution :a {:a nil, :b 2}))

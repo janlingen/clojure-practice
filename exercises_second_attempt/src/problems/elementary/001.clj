@@ -7,6 +7,6 @@
 it will evaluate to true.")
 
 
-(def solution nil)
+(def solution (even? 2))
 
 (assert (and (= solution true)))

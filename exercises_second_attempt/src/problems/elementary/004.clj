@@ -2,11 +2,10 @@
 
 (comment "Lists")
 
-
 (comment "Lists can be constructed with either
 a function or a quoted form.")
 
 
-(def solution (list ,,,))
+(def solution (list :a :b :c))
 
 (assert (and (= solution (quote (:a :b :c)))))

@@ -13,7 +13,9 @@ Using -> can sometimes make your code more readable.")
 
 
 (defn solution
-  [& args])
+  [& args]
+  (last (first args)))
 
 
-(assert (and (= (solution (sort (rest (reverse [2 5 4 1 3 6])))) (-> [2 5 4 1 3 6] reverse rest sort solution) 5)))
+(assert (and (= (solution (sort (rest (reverse [2 5 4 1 3 6])))) 
+                (-> [2 5 4 1 3 6] reverse rest sort solution) 5)))

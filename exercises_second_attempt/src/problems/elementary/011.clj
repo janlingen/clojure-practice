@@ -8,6 +8,6 @@ the conj function returns a new map
 with one or more key-value pairs "added".")
 
 
-(def solution nil)
+(def solution {:b 2})
 
 (assert (and (= {:a 1, :b 2, :c 3} (conj {:a 1} solution [:c 3]))))

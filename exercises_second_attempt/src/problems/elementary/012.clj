@@ -8,7 +8,7 @@ You can operate on sequences with functions
 like first, second, and last.")
 
 
-(def solution nil)
+(def solution 3)
 
 
 (assert (and (= solution (first (quote (3 2 1))))

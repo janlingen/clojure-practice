@@ -7,6 +7,6 @@
 so you can use Java string methods on them.")
 
 
-(def solution nil)
+(def solution "HELLO WORLD")
 
 (assert (and (= solution (.toUpperCase "hello world"))))

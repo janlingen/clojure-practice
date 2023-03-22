@@ -13,7 +13,7 @@ thus reducing the entire collection to one value.
 Don't worry, it's not as complicated as it sounds.")
 
 
-(def solution nil)
+(def solution +)
 
 
 (assert (and (= 15 (reduce solution [1 2 3 4 5]))

@@ -7,6 +7,6 @@
 of a sequence except the first.")
 
 
-(def solution nil)
+(def solution '(20 30 40))
 
 (assert (and (= solution (rest [10 20 30 40]))))
