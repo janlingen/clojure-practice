@@ -8,7 +8,7 @@ the last element in a sequence.")
 
 
 (defn solution
-  [& args])
+  [y] (last y))
 
 
 (assert (and (= (solution [1 2 3 4 5]) 5)

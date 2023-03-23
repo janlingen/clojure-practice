@@ -8,7 +8,7 @@ the sum of a sequence of numbers.")
 
 
 (defn solution
-  [& args])
+  [x] (reduce + x))
 
 
 (assert (and (= (solution [1 2 3]) 6)

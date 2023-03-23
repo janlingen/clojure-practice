@@ -6,9 +6,10 @@
 (comment "Write a function which returns
 the total number of elements in a sequence.")
 
+(rest [])
 
 (defn solution
-  [& args])
+  [x] (count x))
 
 
 (assert (and (= (solution (quote (1 2 3 3 1))) 5)

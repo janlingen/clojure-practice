@@ -8,7 +8,7 @@ the Nth element from a sequence.")
 
 
 (defn solution
-  [& args])
+  [x y] (if (= y 0) (first x) (solution (rest x) (dec y))))
 
 
 (assert (and (= (solution (quote (4 5 6 7)) 2) 6)

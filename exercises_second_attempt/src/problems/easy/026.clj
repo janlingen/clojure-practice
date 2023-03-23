@@ -8,7 +8,7 @@ the first X fibonacci numbers.")
 
 
 (defn solution
-  [& args])
+  [x] (solution 1 3))
 
 
 (assert (and (= (solution 3) (quote (1 1 2)))
